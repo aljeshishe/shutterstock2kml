@@ -3,741 +3,1305 @@
 <Document>
   <name>Shutterstock Places: Romania</name>
 
-  <Style id="green-castle">
+  <Style id="darkgreen">
     <IconStyle>
-      <color>ff00ff00</color>
-      <scale>1.2</scale>
-      <Icon><href>http://maps.google.com/mapfiles/kml/shapes/ranger_station.png</href></Icon>
-    </IconStyle>
-  </Style>
-  <Style id="green-religious">
-    <IconStyle>
-      <color>ff00ff00</color>
-      <scale>1.2</scale>
-      <Icon><href>http://maps.google.com/mapfiles/kml/shapes/worship_general.png</href></Icon>
-    </IconStyle>
-  </Style>
-  <Style id="green-nature">
-    <IconStyle>
-      <color>ff00ff00</color>
-      <scale>1.2</scale>
-      <Icon><href>http://maps.google.com/mapfiles/kml/shapes/parks.png</href></Icon>
-    </IconStyle>
-  </Style>
-  <Style id="green-museum">
-    <IconStyle>
-      <color>ff00ff00</color>
-      <scale>1.2</scale>
-      <Icon><href>http://maps.google.com/mapfiles/kml/shapes/museum.png</href></Icon>
-    </IconStyle>
-  </Style>
-  <Style id="green-urban">
-    <IconStyle>
-      <color>ff00ff00</color>
-      <scale>1.2</scale>
-      <Icon><href>http://maps.google.com/mapfiles/kml/shapes/homegardenbusiness.png</href></Icon>
-    </IconStyle>
-  </Style>
-  <Style id="green-default">
-    <IconStyle>
-      <color>ff00ff00</color>
-      <scale>1.2</scale>
+      <scale>1.4</scale>
       <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
     </IconStyle>
   </Style>
-  <Style id="yellow-castle">
+
+  <Style id="green">
     <IconStyle>
-      <color>ff00ffff</color>
       <scale>1.0</scale>
-      <Icon><href>http://maps.google.com/mapfiles/kml/shapes/ranger_station.png</href></Icon>
+      <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
     </IconStyle>
   </Style>
-  <Style id="yellow-religious">
+
+  <Style id="yellow">
     <IconStyle>
-      <color>ff00ffff</color>
-      <scale>1.0</scale>
-      <Icon><href>http://maps.google.com/mapfiles/kml/shapes/worship_general.png</href></Icon>
-    </IconStyle>
-  </Style>
-  <Style id="yellow-nature">
-    <IconStyle>
-      <color>ff00ffff</color>
-      <scale>1.0</scale>
-      <Icon><href>http://maps.google.com/mapfiles/kml/shapes/parks.png</href></Icon>
-    </IconStyle>
-  </Style>
-  <Style id="yellow-museum">
-    <IconStyle>
-      <color>ff00ffff</color>
-      <scale>1.0</scale>
-      <Icon><href>http://maps.google.com/mapfiles/kml/shapes/museum.png</href></Icon>
-    </IconStyle>
-  </Style>
-  <Style id="yellow-urban">
-    <IconStyle>
-      <color>ff00ffff</color>
-      <scale>1.0</scale>
-      <Icon><href>http://maps.google.com/mapfiles/kml/shapes/homegardenbusiness.png</href></Icon>
-    </IconStyle>
-  </Style>
-  <Style id="yellow-default">
-    <IconStyle>
-      <color>ff00ffff</color>
       <scale>1.0</scale>
       <Icon><href>http://maps.google.com/mapfiles/kml/paddle/ylw-circle.png</href></Icon>
     </IconStyle>
   </Style>
-  <Style id="red-castle">
+
+  <Style id="orange">
     <IconStyle>
-      <color>ff0000ff</color>
-      <scale>0.8</scale>
-      <Icon><href>http://maps.google.com/mapfiles/kml/shapes/ranger_station.png</href></Icon>
+      <scale>1.0</scale>
+      <Icon><href>http://maps.google.com/mapfiles/kml/paddle/orange-circle.png</href></Icon>
     </IconStyle>
   </Style>
-  <Style id="red-religious">
+
+  <Style id="red">
     <IconStyle>
-      <color>ff0000ff</color>
-      <scale>0.8</scale>
-      <Icon><href>http://maps.google.com/mapfiles/kml/shapes/worship_general.png</href></Icon>
-    </IconStyle>
-  </Style>
-  <Style id="red-nature">
-    <IconStyle>
-      <color>ff0000ff</color>
-      <scale>0.8</scale>
-      <Icon><href>http://maps.google.com/mapfiles/kml/shapes/parks.png</href></Icon>
-    </IconStyle>
-  </Style>
-  <Style id="red-museum">
-    <IconStyle>
-      <color>ff0000ff</color>
-      <scale>0.8</scale>
-      <Icon><href>http://maps.google.com/mapfiles/kml/shapes/museum.png</href></Icon>
-    </IconStyle>
-  </Style>
-  <Style id="red-urban">
-    <IconStyle>
-      <color>ff0000ff</color>
-      <scale>0.8</scale>
-      <Icon><href>http://maps.google.com/mapfiles/kml/shapes/homegardenbusiness.png</href></Icon>
-    </IconStyle>
-  </Style>
-  <Style id="red-default">
-    <IconStyle>
-      <color>ff0000ff</color>
-      <scale>0.8</scale>
+      <scale>1.0</scale>
       <Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>
     </IconStyle>
   </Style>
-  <Folder>
-    <name>Castles and Fortresses</name>
-    <Placemark>
-      <name>Alba Iulia Citadel</name>
-      <styleUrl>#red-castle</styleUrl>
-      <Point>
-        <coordinates>23.5767719,46.0562584,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Alba%20Iulia%20Citadel">Alba Iulia Citadel on Google Maps</a></h3>
-        <p>Rating: 5.0/5 (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/alba-iulia-romania-1000w-593017568.jpg" width="400" /></p>
-        <p><em>Alba Iulia, Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Biertan Fortified Church</name>
-      <styleUrl>#red-castle</styleUrl>
-      <Point>
-        <coordinates>24.5214521,46.1351578,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Biertan%20Fortified%20Church">Biertan Fortified Church on Google Maps</a></h3>
-        <p>Rating: 5.0/5 (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/villages-fortified-churches-transylvania-biertan-1000w-727691296.jpg" width="400" /></p>
-        <p><em>Villages with Fortified Churches in Transylvania - BIERTAN</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Corvin Castle, Hunedoara</name>
-      <styleUrl>#red-castle</styleUrl>
-      <Point>
-        <coordinates>22.8883289,45.7491876,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Corvin%20Castle%2C%20Hunedoara">Corvin Castle, Hunedoara on Google Maps</a></h3>
-        <p>Rating: 5.0/5 (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/corvin-castle-romania-1000w-727668562.jpg" width="400" /></p>
-        <p><em>Corvin Castle in Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Banffy Castle, Bontida</name>
-      <styleUrl>#red-castle</styleUrl>
-      <Point>
-        <coordinates>23.8103208,46.9102532,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Banffy%20Castle%2C%20Bontida">Banffy Castle, Bontida on Google Maps</a></h3>
-        <p>Rating: 5.0/5 (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/ruins-banffy-castle-bontida-near-1000w-355117085.jpg" width="400" /></p>
-        <p><em>The ruins of Banffy Castle in Bontida, near Cluj Napoca, Romania. Winter time</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Moldovita Monastery</name>
-      <styleUrl>#red-castle</styleUrl>
-      <Point>
-        <coordinates>25.5715176,47.6570376,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Moldovita%20Monastery">Moldovita Monastery on Google Maps</a></h3>
-        <p>Rating: 5.0/5 (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/romania-unesco-site-churches-moldavia-1000w-727648666.jpg" width="400" /></p>
-        <p><em>Romania UNESCO Site - Churches of Moldavia</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Harman Fortified Church</name>
-      <styleUrl>#red-castle</styleUrl>
-      <Point>
-        <coordinates>25.6858096,45.7139567,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Harman%20Fortified%20Church">Harman Fortified Church on Google Maps</a></h3>
-        <p>Rating: 5.0/5 (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/romania-church-interior-1000w-727714027.jpg" width="400" /></p>
-        <p><em>Romania Church Interior</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Bran Castle</name>
-      <styleUrl>#red-castle</styleUrl>
-      <Point>
-        <coordinates>25.3672373,45.5150774,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Bran%20Castle">Bran Castle on Google Maps</a></h3>
-        <p>Rating: 4.0/5 (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/aerial-view-area-surrounding-bran-1000w-380092684.jpg" width="400" /></p>
-        <p><em>aerial view of area surrounding bran castle near romanian city brasov.</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Sighisoara Historic Centre</name>
-      <styleUrl>#red-castle</styleUrl>
-      <Point>
-        <coordinates>24.7934483,46.2202037,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Sighisoara%20Historic%20Centre">Sighisoara Historic Centre on Google Maps</a></h3>
-        <p>Rating: 3.2/5 (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/historic-centre-sighioara-unesco-world-1000w-727699825.jpg" width="400" /></p>
-        <p><em>Historic Centre of Sighioara - UNESCO World Heritage Site</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Bucharest</name>
-      <styleUrl>#red-castle</styleUrl>
-      <Point>
-        <coordinates>26.102684,44.4361414,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Bucharest">Bucharest on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/bucharest-romania-1000w-613861490.jpg" width="400" /></p>
-        <p><em>Bucharest, Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Rasnov Citadel</name>
-      <styleUrl>#red-castle</styleUrl>
-      <Point>
-        <coordinates>25.4693836,45.5905835,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Rasnov%20Citadel">Rasnov Citadel on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/famous-historic-rasnov-citadel-under-1000w-1957489666.jpg" width="400" /></p>
-        <p><em>The famous historic Rasnov Citadel under a cloudy sky in Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Palace of the Parliament, Bucharest</name>
-      <styleUrl>#red-castle</styleUrl>
-      <Point>
-        <coordinates>26.0872481,44.4275103,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Palace%20of%20the%20Parliament%2C%20Bucharest">Palace of the Parliament, Bucharest on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/palace-parliament-romania-1000w-727640149.jpg" width="400" /></p>
-        <p><em>Palace of the Parliament in Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Iasi</name>
-      <styleUrl>#red-castle</styleUrl>
-      <Point>
-        <coordinates>27.5837814,47.1615598,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Iasi">Iasi on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/iasi-romania-1000w-598546964.jpg" width="400" /></p>
-        <p><em>Iasi, Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Peles Castle, Sinaia</name>
-      <styleUrl>#red-castle</styleUrl>
-      <Point>
-        <coordinates>25.5427334,45.3600853,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Peles%20Castle%2C%20Sinaia">Peles Castle, Sinaia on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/sinaia-romania-1000w-613181663.jpg" width="400" /></p>
-        <p><em>Sinaia, Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Pelisor Castle, Sinaia</name>
-      <styleUrl>#red-castle</styleUrl>
-      <Point>
-        <coordinates>25.5391434,45.3606012,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Pelisor%20Castle%2C%20Sinaia">Pelisor Castle, Sinaia on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/pelisor-castle-1000w-727736260.jpg" width="400" /></p>
-        <p><em>Pelisor Castle</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Viscri Fortified Church</name>
-      <styleUrl>#red-castle</styleUrl>
-      <Point>
-        <coordinates>25.0885808,46.0548612,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Viscri%20Fortified%20Church">Viscri Fortified Church on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/viscri-unesco-site-romania-villages-1000w-727699858.jpg" width="400" /></p>
-        <p><em>Viscri UNESCO Site in Romania - Villages with Fortified Churches in Transylvania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Fagaras Citadel</name>
-      <styleUrl>#red-castle</styleUrl>
-      <Point>
-        <coordinates>24.9737499,45.8451744,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Fagaras%20Citadel">Fagaras Citadel on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/sunny-summer-view-medieval-fagaras-1000w-1136460992.jpg" width="400" /></p>
-        <p><em>Sunny summer view of medieval Fagaras Citadel. Picturesque morninng scene of Transylvania, Romania, Europe. Traveling concept background.</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Rimetea Fortress</name>
-      <styleUrl>#red-castle</styleUrl>
-      <Point>
-        <coordinates>23.5676421,46.4531027,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Rimetea%20Fortress">Rimetea Fortress on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/aerial-shot-amazing-medieval-fortress-1000w-1808533603.jpg" width="400" /></p>
-        <p><em>An aerial shot of an amazing medieval fortress on top of a hill in Rimetea, Transylvania, Romania</em></p>
-      ]]></description>
-    </Placemark>
-  </Folder>
-  <Folder>
-    <name>Religious Sites</name>
-    <Placemark>
-      <name>Sinaia Monastery</name>
-      <styleUrl>#red-religious</styleUrl>
-      <Point>
-        <coordinates>25.5493707,45.355333,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Sinaia%20Monastery">Sinaia Monastery on Google Maps</a></h3>
-        <p>Rating: 5.0/5 (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/low-angle-shot-historic-monastery-1000w-1586785990.jpg" width="400" /></p>
-        <p><em>A low angle shot of the historic Monastery of Sinaia in Romania, Europe under the cloudy sky</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Sibiu Old Town</name>
-      <styleUrl>#green-religious</styleUrl>
-      <Point>
-        <coordinates>24.1519202,45.7973912,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Sibiu%20Old%20Town">Sibiu Old Town on Google Maps</a></h3>
-        <p>Rating: 4.9/5 (14841 reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/sibiu-romania-1000w-613824275.jpg" width="400" /></p>
-        <p><em>Sibiu, Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Horezu Monastery</name>
-      <styleUrl>#green-religious</styleUrl>
-      <Point>
-        <coordinates>24.0075745,45.1693647,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Horezu%20Monastery">Horezu Monastery on Google Maps</a></h3>
-        <p>Rating: 4.8/5 (2482 reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/monastery-horezu-romania-1000w-727686385.jpg" width="400" /></p>
-        <p><em>Monastery of Horezu in Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Cluj-Napoca</name>
-      <styleUrl>#red-religious</styleUrl>
-      <Point>
-        <coordinates>23.5899542,46.769379,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Cluj-Napoca">Cluj-Napoca on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/cluj-napoca-romania-1000w-598561523.jpg" width="400" /></p>
-        <p><em>Cluj Napoca, Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Densus Church</name>
-      <styleUrl>#red-religious</styleUrl>
-      <Point>
-        <coordinates>22.8053364,45.5824475,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Densus%20Church">Densus Church on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/densus-church-unesco-site-romania-1000w-727680547.jpg" width="400" /></p>
-        <p><em>Densus Church UNESCO Site in Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Oradea</name>
-      <styleUrl>#red-religious</styleUrl>
-      <Point>
-        <coordinates>21.9285231,47.0549163,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Oradea">Oradea on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/oradea-romania-1000w-593014061.jpg" width="400" /></p>
-        <p><em>Oradea, Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Black Church, Brasov</name>
-      <styleUrl>#red-religious</styleUrl>
-      <Point>
-        <coordinates>25.5880699,45.640997,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Black%20Church%2C%20Brasov">Black Church, Brasov on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/snowy-tree-near-black-church-1000w-1032270937.jpg" width="400" /></p>
-        <p><em>Snowy tree near the black church, Brasov</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Mioveni Orthodox Cathedral</name>
-      <styleUrl>#red-religious</styleUrl>
-      <Point>
-        <coordinates>24.9372012,44.9568131,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Mioveni%20Orthodox%20Cathedral">Mioveni Orthodox Cathedral on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/new-orthodox-cathedral-mioveni-romania-1000w-68362753.jpg" width="400" /></p>
-        <p><em>The new Orthodox cathedral in Mioveni, Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Curtea de Arges Cathedral</name>
-      <styleUrl>#red-religious</styleUrl>
-      <Point>
-        <coordinates>24.6779826,45.1469341,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Curtea%20de%20Arges%20Cathedral">Curtea de Arges Cathedral on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/curtea-de-arge-cathedral-romania-1000w-727717876.jpg" width="400" /></p>
-        <p><em>Curtea de Arge Cathedral in Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Wooden Churches of Maramures</name>
-      <styleUrl>#red-religious</styleUrl>
-      <Point>
-        <coordinates>24.091809,47.7931331,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Wooden%20Churches%20of%20Maramures">Wooden Churches of Maramures on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/wooden-churches-maramure-region-northern-1000w-727658833.jpg" width="400" /></p>
-        <p><em>The Wooden churches of Maramure in the Maramure region of northern Transylvania</em></p>
-      ]]></description>
-    </Placemark>
-  </Folder>
-  <Folder>
-    <name>Nature</name>
-    <Placemark>
-      <name>Balea Lake</name>
-      <styleUrl>#red-nature</styleUrl>
-      <Point>
-        <coordinates>24.6170492,45.6033145,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Balea%20Lake">Balea Lake on Google Maps</a></h3>
-        <p>Rating: 5.0/5 (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/aerial-view-balea-lake-romania-1000w-65088553.jpg" width="400" /></p>
-        <p><em>Aerial view of Balea Lake in Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Scarisoara Ice Cave</name>
-      <styleUrl>#red-nature</styleUrl>
-      <Point>
-        <coordinates>22.8104874,46.4899218,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Scarisoara%20Ice%20Cave">Scarisoara Ice Cave on Google Maps</a></h3>
-        <p>Rating: 5.0/5 (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/underground-glacier-scarisoara-cave-apuseni-1000w-109426883.jpg" width="400" /></p>
-        <p><em>Underground glacier in Scarisoara cave, Apuseni mountains, Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Apuseni Natural Park</name>
-      <styleUrl>#red-nature</styleUrl>
-      <Point>
-        <coordinates>22.7937594,46.598723,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Apuseni%20Natural%20Park">Apuseni Natural Park on Google Maps</a></h3>
-        <p>Rating: 5.0/5 (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/mountains-trees-apuseni-natural-park-1000w-1731944302.jpg" width="400" /></p>
-        <p><em>The mountains and trees of the Apuseni Natural Park in Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Cheile Bicazului-Hasmas</name>
-      <styleUrl>#green-nature</styleUrl>
-      <Point>
-        <coordinates>25.8123265,46.7406635,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Cheile%20Bicazului-Hasmas">Cheile Bicazului-Hasmas on Google Maps</a></h3>
-        <p>Rating: 4.8/5 (11000 reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/girl-hipster-sits-on-background-1000w-1138588775.jpg" width="400" /></p>
-        <p><em>girl hipster sits on the background of Romanian Carpathians mountains</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Caraiman Peak, Bucegi</name>
-      <styleUrl>#yellow-nature</styleUrl>
-      <Point>
-        <coordinates>25.4975164,45.4160298,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Caraiman%20Peak%2C%20Bucegi">Caraiman Peak, Bucegi on Google Maps</a></h3>
-        <p>Rating: 4.8/5 (152 reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/closeup-caraiman-peak-rocky-formation-1000w-1826679398.jpg" width="400" /></p>
-        <p><em>A closeup of Caraiman Peak rocky formation in Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Carol Park, Bucharest</name>
-      <styleUrl>#green-nature</styleUrl>
-      <Point>
-        <coordinates>26.0962931,44.4140275,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Carol%20Park%2C%20Bucharest">Carol Park, Bucharest on Google Maps</a></h3>
-        <p>Rating: 4.6/5 (15673 reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/alley-park-1000w-545843440.jpg" width="400" /></p>
-        <p><em>Alley in a park</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Tarnita Lake, Transylvania</name>
-      <styleUrl>#red-nature</styleUrl>
-      <Point>
-        <coordinates>23.0547065,46.1780785,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Tarnita%20Lake%2C%20Transylvania">Tarnita Lake, Transylvania on Google Maps</a></h3>
-        <p>Rating: 4.5/5 (57 reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/hiking-girl-overlooking-mountain-lake-1000w-1820601641.jpg" width="400" /></p>
-        <p><em>Hiking girl overlooking mountain lake landscape in Tarnita, Transylvania, Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Rodnei Mountains National Park</name>
-      <styleUrl>#red-nature</styleUrl>
-      <Point>
-        <coordinates>24.7371749,47.529456,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Rodnei%20Mountains%20National%20Park">Rodnei Mountains National Park on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/aerial-shot-mountain-landscape-rodnei-1000w-1820600918.jpg" width="400" /></p>
-        <p><em>An aerial shot of a mountain landscape in Rodnei Mountains National Park, Transylvania, Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Bucegi Mountains</name>
-      <styleUrl>#red-nature</styleUrl>
-      <Point>
-        <coordinates>25.319275,45.4901889,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Bucegi%20Mountains">Bucegi Mountains on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/bucegi-mountains-carpathianstransylvaniaromania-1000w-1011942358.jpg" width="400" /></p>
-        <p><em>Bucegi mountains in Carpathians,Transylvania,Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Village Museum, Bucharest</name>
-      <styleUrl>#red-nature</styleUrl>
-      <Point>
-        <coordinates>26.0779139,44.4715807,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Village%20Museum%2C%20Bucharest">Village Museum, Bucharest on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/old-wooden-millvillage-museumbucharestromaniaeurope-1000w-388377274.jpg" width="400" /></p>
-        <p><em>The old wooden mill,village museum,Bucharest,Romania,Europe</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Retezat National Park</name>
-      <styleUrl>#red-nature</styleUrl>
-      <Point>
-        <coordinates>22.7877994,45.324775,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Retezat%20National%20Park">Retezat National Park on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/retezat-national-park-hunedoara-county-1000w-1478852087.jpg" width="400" /></p>
-        <p><em>Retezat national park, Hunedoara county, Carpathian mountains, Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Transfagarasan Road</name>
-      <styleUrl>#red-nature</styleUrl>
-      <Point>
-        <coordinates>24.6140093,45.6024757,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Transfagarasan%20Road">Transfagarasan Road on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/girl-on-cliff-edge-near-1000w-1227609433.jpg" width="400" /></p>
-        <p><em>Girl on the cliff edge near Transfegerasan mountain road.</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Ursus Spelaeus Cave, Apuseni</name>
-      <styleUrl>#red-nature</styleUrl>
-      <Point>
-        <coordinates>22.569324,46.553915,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Ursus%20Spelaeus%20Cave%2C%20Apuseni">Ursus Spelaeus Cave, Apuseni on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/hall-ursus-spelaeus-cave-nothwest-1000w-1173689311.jpg" width="400" /></p>
-        <p><em>hall of Ursus spelaeus cave in noth-west romanian mountains bihor district transilvania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Brancusi Ensemble, Targu Jiu</name>
-      <styleUrl>#red-nature</styleUrl>
-      <Point>
-        <coordinates>23.2854143,45.0374509,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Brancusi%20Ensemble%2C%20Targu%20Jiu">Brancusi Ensemble, Targu Jiu on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/tirgu-jiu-potential-unesco-site-1000w-727680571.jpg" width="400" /></p>
-        <p><em>Tirgu Jiu Potential UNESCO Site</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Vidraru Dam Lake</name>
-      <styleUrl>#red-nature</styleUrl>
-      <Point>
-        <coordinates>24.6314651,45.3663087,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Vidraru%20Dam%20Lake">Vidraru Dam Lake on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/landscape-vidraru-dam-lake-fagaras-1000w-65088523.jpg" width="400" /></p>
-        <p><em>Landscape with Vidraru dam Lake in Fagaras mountains in Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Transalpina Road</name>
-      <styleUrl>#red-nature</styleUrl>
-      <Point>
-        <coordinates>23.6292764,45.4386043,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Transalpina%20Road">Transalpina Road on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/guy-near-transalpina-serpentines-road-1000w-1661416231.jpg" width="400" /></p>
-        <p><em>Guy near the Transalpina serpentines road DN67C. This is one of the most beautiful alpine routes in Romania and the highest mountain asphalt road in Romania and  Carpathians mountains.</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Red Lake (Lacul Rosu)</name>
-      <styleUrl>#red-nature</styleUrl>
-      <Point>
-        <coordinates>25.7868105,46.7880712,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Red%20Lake%20%28Lacul%20Rosu%29">Red Lake (Lacul Rosu) on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/wooden-well-near-green-landscape-1000w-1586791414.jpg" width="400" /></p>
-        <p><em>A wooden well near in a green landscape near the Red Lake in Lack Rosu, Romania</em></p>
-      ]]></description>
-    </Placemark>
-    <Placemark>
-      <name>Lake Oasa</name>
-      <styleUrl>#red-nature</styleUrl>
-      <Point>
-        <coordinates>23.6128411,45.5600059,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Lake%20Oasa">Lake Oasa on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/landscape-lake-oasa-romanian-carpathians-1000w-86239855.jpg" width="400" /></p>
-        <p><em>Landscape with lake Oasa in Romanian Carpathians</em></p>
-      ]]></description>
-    </Placemark>
-  </Folder>
-  <Folder>
-    <name>Urban</name>
-    <Placemark>
-      <name>Arad City Centre</name>
-      <styleUrl>#red-urban</styleUrl>
-      <Point>
-        <coordinates>21.3196342,46.1753793,0</coordinates>
-      </Point>
-      <description><![CDATA[
-        <h3><a href="https://www.google.com/maps/search/Arad%20City%20Centre">Arad City Centre on Google Maps</a></h3>
-        <p>Rating: N/A (no reviews)</p>
-        <p><img src="https://image.shutterstock.com/image-photo/arad-winter-romania-1000w-1019201122.jpg" width="400" /></p>
-        <p><em>Arad in winter, Romania</em></p>
-      ]]></description>
-    </Placemark>
-  </Folder>
+
+  <Placemark>
+    <name>Bran Castle</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>25.3671637,45.5149022,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Bran+Castle">Bran Castle on Google Maps</a></h3>
+    <p>Rating: 4.3/5 (109,782 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/bran-castle-standing-on-rocky-600nw-2686866911.jpg" width="400" /></p>
+    <p><em>Bran Castle standing on a rocky hill, a medieval fortress and national monument, with Romanian, Brasov County, and European Union flags waving in front under a clear blue sky in Romania, Transylvania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Caru&#x27; cu bere</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>26.0981207,44.4320175,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Caru%27+cu+bere">Caru&#x27; cu bere on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (85,868 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/bucharest-romania-september-04-2021-600nw-2479062331.jpg" width="400" /></p>
+    <p><em>Bucharest, Romania - September 04, 2021: Outdoor dining opposite the Palace of the Deposits and Consignments in Bucharest, Romania Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Peleș Castle</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>25.5426423,45.3599816,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Pele%C8%99+Castle">Peleș Castle on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (73,417 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/romania-sinaia-july-07-2018-260nw-2626790239.jpg" width="400" /></p>
+    <p><em>ROMANIA , SINAIA, July 07, 2018: Colorful morning view of popular tourist deastination - Pelisor castle, part of the complex as Peles castle. Beautiful summer scene of Romania, Europe. Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>&quot;King Michael I&quot; Park</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>26.0827527,44.4702015,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/%22King+Michael+I%22+Park">&quot;King Michael I&quot; Park on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (64,211 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/beautiful-park-surrounding-romanian-athenaeum-600nw-2511628021.jpg" width="400" /></p>
+    <p><em>Beautiful park surrounding the Romanian Athenaeum (Ateneul Român), Bucharest, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Corvin Castle</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>22.8882866,45.7493634,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Corvin+Castle">Corvin Castle on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (49,494 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/corvin-castles-historic-courtyard-renaissance-600nw-2688647433.jpg" width="400" /></p>
+    <p><em>Corvin Castle&#x27;s historic courtyard with Renaissance and Gothic architecture of Transylvania, viewed through an arched stone balcony, presenting medieval charm under a vibrant sky in Hunedoara, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Cismigiu Gardens</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>26.0910803,44.4373441,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Cismigiu+Gardens">Cismigiu Gardens on Google Maps</a></h3>
+    <p>Rating: 4.4/5 (40,993 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/aerial-drone-view-over-bucharest-260nw-2494015569.jpg" width="400" /></p>
+    <p><em>Aerial drone view over Bucharest downtown cityscape with Cismigiu Gardens. Capital of Romania.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Alba-Carolina Citadel</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>23.5716521,46.0685595,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Alba-Carolina+Citadel">Alba-Carolina Citadel on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (37,907 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/attractive-evening-view-bell-tower-260nw-1635032221.jpg" width="400" /></p>
+    <p><em>Attractive evening view of bell tower of Reunification Cathedral, Fortified churches inside Alba Carolina Fortress. Sunny summer scene of Transylvania, Alba Iulia city, Romania, Europe.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Castelul de Lut Valea Zânelor</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>24.4961354,45.6945092,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Castelul+de+Lut+Valea+Z%C3%A2nelor">Castelul de Lut Valea Zânelor on Google Maps</a></h3>
+    <p>Rating: 4.2/5 (33,588 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/picturesque-view-castelul-de-lut-260nw-2494351773.jpg" width="400" /></p>
+    <p><em>Picturesque view of the Castelul de Lut Valea Zanelor - a fairy tale clay castle at Valley of Fairies in Sibiu county, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Salina Turda</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>23.7871819,46.5876989,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Salina+Turda">Salina Turda on Google Maps</a></h3>
+    <p>Rating: 4.5/5 (30,593 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/clujnapoca-romania-july-29-2023-600nw-2660834517.jpg" width="400" /></p>
+    <p><em>Cluj-Napoca, Romania - July 29 2023: The underground playground in the main hall of Salina Turda, a salt mine near Cluj-Napoca in Romania Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>&quot;Bucegi&quot; Natural Park</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>25.4500551,45.3739368,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/%22Bucegi%22+Natural+Park">&quot;Bucegi&quot; Natural Park on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (27,121 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/womans-hiking-team-colorful-backpacks-260nw-298142705.jpg" width="400" /></p>
+    <p><em>Woman&#x27;s hiking team with colorful backpacks walking on narrow trail,Bucegi mountains,Carpathians,Transylvania,Romania,Europe</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Cantacuzino Castle</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>25.5426997,45.4138501,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Cantacuzino+Castle">Cantacuzino Castle on Google Maps</a></h3>
+    <p>Rating: 4.4/5 (24,011 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/aerial-view-cantacuzino-castle-busteni-600nw-2691752065.jpg" width="400" /></p>
+    <p><em>An aerial view of Cantacuzino Castle in Busteni, Romania, surrounded by lush greenery.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Cărturești Carusel</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>26.1016028,44.4319847,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/C%C4%83rture%C8%99ti+Carusel">Cărturești Carusel on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (23,875 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/bucharest-romania-october-17-2025-600nw-2728902607.jpg" width="400" /></p>
+    <p><em>Bucharest, Romania - October 17, 2025: The Cărturești Carusel, a famous bookstore in old town. Stunning interior, classical and modern european architectural style. Store with variety of books and music, movies and cartoon items. Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Victory Square</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>21.2257158,45.7536718,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Victory+Square">Victory Square on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (23,524 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/old-city-timisoara-romania-260nw-2478647561.jpg" width="400" /></p>
+    <p><em>Old city of Timisoara, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>The Bridge of Lies</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>24.1507912,45.7983007,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/The+Bridge+of+Lies">The Bridge of Lies on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (23,497 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/view-old-historic-center-sibiu-600nw-2759161489.jpg" width="400" /></p>
+    <p><em>View of the old historic center of Sibiu from the Council Tower. A popular viewpoint in Sibiu, Transylvania, Romania. The tower is located between the two main squares. Visitors can enter this 13th-century tower and climb the stairs to see the city</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Bârsana Monastery</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>24.0920094,47.7930807,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/B%C3%A2rsana+Monastery">Bârsana Monastery on Google Maps</a></h3>
+    <p>Rating: 4.9/5 (22,630 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/exterior-view-botiza-monastery-romania-600nw-2720419649.jpg" width="400" /></p>
+    <p><em>Exterior view of Botiza Monastery in Maramureș, Romania, featuring traditional wooden architecture, religious details, and a peaceful rural setting in the Carpathian Mountains</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Constitution Square</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>26.0915977,44.4272751,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Constitution+Square">Constitution Square on Google Maps</a></h3>
+    <p>Rating: 4.5/5 (22,593 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/bucharest-romania-july-09-2018-260nw-1635125461.jpg" width="400" /></p>
+    <p><em>BUCHAREST, ROMANIA - JULY 09, 2018: Splendid summer view of Palace of the Parliament. Captivating morning cityscape of Bucharest city - capital of Romania, Europe. Traveling concept background. Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>The Council Square</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>25.5891759,45.6421291,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/The+Council+Square">The Council Square on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (21,836 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/brasov-romania-may-17-2022-600nw-2759922437.jpg" width="400" /></p>
+    <p><em>Brasov, Romania - May 17, 2022: Filstich-Plecker House, fountain and Black church on Main Square or Council Square (Piata Sfatului) in the old historic city of Brasov, Transylvania, Romania Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Grigore Antipa National Museum of Natural History</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>26.0846382,44.4531131,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Grigore+Antipa+National+Museum+of+Natural+History">Grigore Antipa National Museum of Natural History on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (21,040 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/national-museum-old-town-bucharest-260nw-2638695281.jpg" width="400" /></p>
+    <p><em>National Museum  in old town Bucharest, cityscape of Romania in Europe</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>The Large Square</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>24.1518272,45.7965215,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/The+Large+Square">The Large Square on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (20,026 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/sibiu-transylvania-romania-may-2-600nw-2476143451.jpg" width="400" /></p>
+    <p><em>Sibiu, Transylvania, Romania - May 2, 2022: Piata Mare or The Large Square and Strada Nicolae Balcescu street - historical center of Sibiu. Bright sunny day. Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Arcul de Triumf</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>26.0781205,44.467226,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Arcul+de+Triumf">Arcul de Triumf on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (18,982 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/aerial-bucharest-arch-triumph-kiseleff-600nw-2637774691.jpg" width="400" /></p>
+    <p><em>Aerial Bucharest. Arch of Triumph, Kiseleff boulevard and Herastrau Park in an aerial photo taken in the north part of Bucharest, Romania, during a summer day. Bucharest from above.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>&quot;Voroneț&quot; Monastery</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>25.8641666,47.5170715,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/%22Vorone%C8%9B%22+Monastery">&quot;Voroneț&quot; Monastery on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (18,823 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/voronet-romania-august-8-2025-600nw-2671048005.jpg" width="400" /></p>
+    <p><em>Voronet, Romania, august 8, 2025. historic voroneț monastery in romania, a unesco world heritage site, known for its vibrant medieval frescoes and iconic voroneț blue color Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>The Romanian Athenaeum</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>26.0973178,44.4413341,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/The+Romanian+Athenaeum">The Romanian Athenaeum on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (18,567 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/romanian-atheneum-bucharest-during-summer-260nw-2511657411.jpg" width="400" /></p>
+    <p><em>Romanian Atheneum in Bucharest during a summer sunset. Aerial view of this amazing landmark historical building from Bucharest, Romania, on Victoriei Avenue (Calea Victoriei). Travel to Romania.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Aquapark Nymphaea</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>21.9522242,47.0529476,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Aquapark+Nymphaea">Aquapark Nymphaea on Google Maps</a></h3>
+    <p>Rating: 4.3/5 (17,356 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/oradea-romania-september-26-2025-600nw-2692097813.jpg" width="400" /></p>
+    <p><em>Oradea, Romania - September 26, 2025: Facade garden greening an old building of the church in Oradea in Romania Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Oradea Fortress</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>21.9437908,47.0519435,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Oradea+Fortress">Oradea Fortress on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (17,198 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/oradea-romania-beautiful-night-scene-600nw-2235643701.jpg" width="400" /></p>
+    <p><em>Oradea, Romania - Beautiful night scene with Union Square, famous baroque downtown, Christmas decorated. Travel destination of Transylvania.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Cetatea Făgărașului</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>24.9737964,45.8452535,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Cetatea+F%C4%83g%C4%83ra%C8%99ului">Cetatea Făgărașului on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (16,533 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/fagaras-transylvania-brasov-county-romania-600nw-2741499625.jpg" width="400" /></p>
+    <p><em>Fagaras, Transylvania, Brasov county, Romania - 24 December 2023: Fagaras Citadel covered in show; medieval fortress during a cold winter day Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Palace of Culture</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>27.586461,47.1574351,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Palace+of+Culture">Palace of Culture on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (16,221 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/palace-culture-iasi-romania-600nw-2637618341.jpg" width="400" /></p>
+    <p><em>Palace of Culture of Iasi, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Vidraru Dam</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>24.6307214,45.366579,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Vidraru+Dam">Vidraru Dam on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (16,165 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/dramatic-view-vidraru-lake-mountains-600nw-2666925579.jpg" width="400" /></p>
+    <p><em>Dramatic view of Vidraru Lake and mountains under cloudy sky, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Radisson Blu Hotel Bucharest</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>26.0943887,44.441334,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Radisson+Blu+Hotel+Bucharest">Radisson Blu Hotel Bucharest on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (15,456 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/bucharest-romania-march-19-2025-600nw-2638695243.jpg" width="400" /></p>
+    <p><em>Bucharest, Romania - MARCH 19, 2025: Night street of the Old Town located in the city center of Bucharest</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>The Casino of Constanța</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>28.6635369,44.1705794,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/The+Casino+of+Constan%C8%9Ba">The Casino of Constanța on Google Maps</a></h3>
+    <p>Rating: 4.4/5 (15,326 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/constanta-casino-architectural-detail-historic-260nw-2655634575.jpg" width="400" /></p>
+    <p><em>Constanta Casino Architectural Detail - Historic Landmark on Black Sea Coast</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Cheile Turzii</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>23.6806591,46.5633699,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Cheile+Turzii">Cheile Turzii on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (15,108 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/amazing-view-turda-gorge-cheile-260nw-2453160673.jpg" width="400" /></p>
+    <p><em>Amazing view of Turda Gorge (Cheile Turzii) natural reserve with marked trails for hikes on Hasdate river.  Location: near Turda close to Cluj-Napoca, in Transylvania, Romania, Europe</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>&quot;Astra&quot; National Museum Complex</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>24.1161218,45.7552474,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/%22Astra%22+National+Museum+Complex">&quot;Astra&quot; National Museum Complex on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (14,501 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/details-traditional-homesteads-located-within-600nw-2743861305.jpg" width="400" /></p>
+    <p><em>Details of traditional homesteads located within the ASTRA Museum of Traditional Folk Civilization in Sibiu, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>&quot;Dimitrie Gusti&quot; National Village Museum</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>26.0764826,44.4723548,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/%22Dimitrie+Gusti%22+National+Village+Museum">&quot;Dimitrie Gusti&quot; National Village Museum on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (14,085 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/wooden-orthodox-church-gorj-county-600nw-2721926123.jpg" width="400" /></p>
+    <p><em>Wooden Orthodox Church from Gorj county, Village Museum, Bucharest, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Anastasie Fătu Botanical Garden</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>27.5567697,47.1865608,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Anastasie+F%C4%83tu+Botanical+Garden">Anastasie Fătu Botanical Garden on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (13,908 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/romania-october-232025-wide-panoramic-260nw-2720687181.jpg" width="400" /></p>
+    <p><em>Iași, Romania - october 23.2025. A wide panoramic shot of the Iasi Botanical Garden entrance featuring circular arrangements of colorful chrysanthemums, the Anastasie Fatu monument, and visitors walking by Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Sinaia Monastery</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>25.5490745,45.3553494,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Sinaia+Monastery">Sinaia Monastery on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (13,021 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/summer-day-sinaia-monastery-romania-600nw-2621297703.jpg" width="400" /></p>
+    <p><em>Summer day at Sinaia monastery in Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Sucevița Monastery</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>25.7112774,47.7781195,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Sucevi%C8%9Ba+Monastery">Sucevița Monastery on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (12,902 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/romania-transylvania-bucovina-suceava-county-600nw-2476232735.jpg" width="400" /></p>
+    <p><em>Romania, Transylvania, Bucovina, Suceava County.  16th C. painted Eastern Orthodox. Sucevita Monastery.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Rupea Citadel</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>25.2122356,46.0371773,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Rupea+Citadel">Rupea Citadel on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (12,833 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/old-famous-castle-rupea-romania-600nw-2742715847.jpg" width="400" /></p>
+    <p><em>the old famous castle in Rupea, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Apuseni Natural Park</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>22.7642009,46.6084985,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Apuseni+Natural+Park">Apuseni Natural Park on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (11,598 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/spectacular-summer-sunrise-on-dragan-260nw-2264583663.jpg" width="400" /></p>
+    <p><em>Spectacular summer sunrise on Dragan lake. Adorable morning view of Apuseni Natural Park. Incredible outdoor scene of Romania, Europe. Beauty of nature concept background.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>The Clock Tower</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>24.7933332,46.2193466,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/The+Clock+Tower">The Clock Tower on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (11,448 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/sighisoara-cityscape-summer-romania-big-260nw-2017911521.jpg" width="400" /></p>
+    <p><em>Sighisoara cityscape in summer, Romania. Big panorama of the Sigishoara old town. Towers and rooftops of medieval city of Sighishoara in Transylvania, Romania. Birthplace of Vlad Dracula</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Union Square</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>21.2289772,45.7579461,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Union+Square">Union Square on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (10,588 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/timisoara-romania-december-18-2023-600nw-2737387457.jpg" width="400" /></p>
+    <p><em>Timisoara, Romania - December 18 2023: Union Square also known as Piata Unirii in Timisoara, Romania. A square from the Baroque era with a park in the middle of which there is a fountain, surrounded by restaurants and pubs. Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Rock Sculpture of Decebalus</name>
+    <styleUrl>#darkgreen</styleUrl>
+    <Point><coordinates>22.2911629,44.6411682,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Rock+Sculpture+of+Decebalus">Rock Sculpture of Decebalus on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (10,402 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/sculpture-mountain-rock-tallest-europe-600nw-2012248598.jpg" width="400" /></p>
+    <p><em>Sculpture in the mountain rock. The tallest in Europe. It represents the face of the Dacian king Decebalus.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Moldovita Monastery</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>25.5711749,47.6570555,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Moldovita+Monastery">Moldovita Monastery on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (9,381 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/vatra-moldovitei-romania-july-13-600nw-2647045553.jpg" width="400" /></p>
+    <p><em>Vatra Moldovitei, Romania - July 13, 2019: Side view of church in Moldovita Monastery in Vatra Moldovitei Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>University Square</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>26.1011925,44.4347985,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/University+Square">University Square on Google Maps</a></h3>
+    <p>Rating: 4.5/5 (8,468 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/bucharest-romania-october-25-2025-600nw-2721177941.jpg" width="400" /></p>
+    <p><em>Bucharest, Romania, October 25, 2025: Woman in black crossing University Square with classical white buildings, domes, and blue sky in background Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Humor Monastery</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>25.8541276,47.5937422,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Humor+Monastery">Humor Monastery on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (8,020 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/humor-monastery-romania-one-romanian-260nw-523823332.jpg" width="400" /></p>
+    <p><em>The Humor Monastery, Romania. One of Romanian Orthodox monasteries in southern Bucovina.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>&quot;Three Holy Hierarchs&quot; Metropolitan Cathedral</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>21.2242344,45.7507607,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/%22Three+Holy+Hierarchs%22+Metropolitan+Cathedral">&quot;Three Holy Hierarchs&quot; Metropolitan Cathedral on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (7,476 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/aerial-view-beautiful-city-timisoara-600nw-2453162829.jpg" width="400" /></p>
+    <p><em>Aerial view of the beautiful city of Timisoara, Romania. Photography was shot from a drone at a higher altitude with the Mitropolitan Cathedral and the parks in the view.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>&quot;Maramureș&#x27; Mountains&quot; Natural Park</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>24.6208191,47.8194694,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/%22Maramure%C8%99%27+Mountains%22+Natural+Park">&quot;Maramureș&#x27; Mountains&quot; Natural Park on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (7,068 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/view-on-valley-borsa-ski-600nw-2678261073.jpg" width="400" /></p>
+    <p><em>View on the Valley with Borsa ski resort town in Rodna Mountains in Maramures region of Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>&quot;Modern&quot; Beach</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>28.6563829,44.1809304,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/%22Modern%22+Beach">&quot;Modern&quot; Beach on Google Maps</a></h3>
+    <p>Rating: 4.3/5 (6,810 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/beach-constanta-city-romania-seen-600nw-2669228523.jpg" width="400" /></p>
+    <p><em>The beach in Constanta city - Romania seen from above</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Palace of Parliament</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>26.0873506,44.4275035,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Palace+of+Parliament">Palace of Parliament on Google Maps</a></h3>
+    <p>Rating: 4.4/5 (6,585 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/bucharest-romania-october-18-2025-600nw-2728823965.jpg" width="400" /></p>
+    <p><em>Bucharest, Romania - October 18, 2025: The Palace of the Parliament (Palatul Parlamentului), initially designed during Communist times as the People&#x27;s House (Casa Poporului) or  the House of the Republic (Casa Republicii), is the seat of the Parliament of Romania, located at the national capital. It is the largest civilian administrative building in the world, the largest military administrative building being the yet larger US Pentagon. Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Djerdap National Park</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>21.9802686,44.5289598,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Djerdap+National+Park">Djerdap National Park on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (6,583 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/breathtaking-panorama-danube-gorges-natural-260nw-2629435197.jpg" width="400" /></p>
+    <p><em>Breathtaking panorama of danube gorges, a natural border between romania and serbia, showcasing majestic mountains and the meandering danube river</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Cascada Bâlea</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>24.6117296,45.6269308,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Cascada+B%C3%A2lea">Cascada Bâlea on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (5,911 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/aerial-view-transfagarasan-road-fagaras-260nw-2494184085.jpg" width="400" /></p>
+    <p><em>Aerial view of Transfagarasan road in Fagaras Mountain.Transfagarasan famous curvy road in Romania.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>The Church of the &quot;Stavropoleos&quot; Monastery</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>26.0988593,44.4317929,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/The+Church+of+the+%22Stavropoleos%22+Monastery">The Church of the &quot;Stavropoleos&quot; Monastery on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (5,874 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/bucharest-romania-august-03-2023-600nw-2664033285.jpg" width="400" /></p>
+    <p><em>Bucharest, Romania - August 03 2023: Stavropoleos Monastery, an Eastern Orthodox monastery in Bucharest, Romania Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Chindia Tower</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>25.4581922,44.9323475,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Chindia+Tower">Chindia Tower on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (5,821 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/chindia-tower-targoviste-romania-vlad-600nw-2672858937.jpg" width="400" /></p>
+    <p><em>Chindia Tower Targoviste Romania – Vlad Tepes Dracula History</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Red Lake</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>25.7865587,46.7899532,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Red+Lake">Red Lake on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (5,539 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/foggy-summer-view-lacu-rosu-260nw-1286178223.jpg" width="400" /></p>
+    <p><em>Foggy summer view of Lacu Rosu lake. Picturesque morning scene of Harghita County, Romania, Europe. Beauty of nature concept background.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>The Fortified Church of Biertan</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>24.5213353,46.1351814,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/The+Fortified+Church+of+Biertan">The Fortified Church of Biertan on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (5,520 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/amazing-medieval-architecture-biertan-fortified-260nw-2462414005.jpg" width="400" /></p>
+    <p><em>Amazing medieval architecture of Biertan fortified Saxon church in Romania protected by Unesco World Heritage Site.  Location: Biertan, Sibiu county, Romania, Europe</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Peri-Săpânţa Monastery</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>23.7002392,47.9831581,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Peri-S%C4%83p%C3%A2n%C5%A3a+Monastery">Peri-Săpânţa Monastery on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (5,091 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/perisapanta-monastery-romania-during-sunny-600nw-2621704033.jpg" width="400" /></p>
+    <p><em>Peri-Sapanta  Monastery in Romania during a sunny day</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>The Fortified Church of Prejmer</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>25.77374,45.7220121,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/The+Fortified+Church+of+Prejmer">The Fortified Church of Prejmer on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (5,068 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/prejmer-romania-april-25-2025-600nw-2676002969.jpg" width="400" /></p>
+    <p><em>Prejmer, Romania - April 25 2025 : Historical church in spring Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>The Tower of Stephen the Great</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>26.3684632,46.9331526,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/The+Tower+of+Stephen+the+Great">The Tower of Stephen the Great on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (5,015 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/piatra-neamt-romania-16102025-wide-260nw-2716265643.jpg" width="400" /></p>
+    <p><em>Piatra Neamt, Romania 16.10.2025. Wide view of the Princely Court complex in Piatra Neamt, Romania, featuring the Ethnography Museum, Stephen the Great Tower, and Princely Church under a dramatic cloudy sky Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Fortress of Severin</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>22.6563642,44.6225691,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Fortress+of+Severin">Fortress of Severin on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (4,851 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/fortress-severin-romania-600nw-2621296167.jpg" width="400" /></p>
+    <p><em>The Fortress of Severin in Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Mocănița Sovata</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>25.068254,46.5987116,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Moc%C4%83ni%C8%9Ba+Sovata">Mocănița Sovata on Google Maps</a></h3>
+    <p>Rating: 4.3/5 (4,816 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/bear-lake-sovata-resort-romania-600nw-2693500983.jpg" width="400" /></p>
+    <p><em>Bear Lake in Sovata resort - Romania seen from above in autumn</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Ski Resort Transalpina</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>23.7069373,45.4170745,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Ski+Resort+Transalpina">Ski Resort Transalpina on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (4,611 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/vidra-lake-romania-winter-time-600nw-2674859977.jpg" width="400" /></p>
+    <p><em>Vidra Lake from Romania in winter time. Photo from Transalpina Ski Resort</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>The Black Church</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>25.5881636,45.6410928,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/The+Black+Church">The Black Church on Google Maps</a></h3>
+    <p>Rating: 4.5/5 (4,498 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/brasov-romania-black-church-tampa-260nw-2049039326.jpg" width="400" /></p>
+    <p><em>Brasov, Romania. The Black Church and Tampa mountain.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>St. Anthony’s Church</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>26.1020425,44.4301036,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/St.+Anthony%E2%80%99s+Church">St. Anthony’s Church on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (4,480 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/bucharest-romania-august-03-2023-600nw-2664035171.jpg" width="400" /></p>
+    <p><em>Bucharest, Romania - August 03 2023: Curtea Veche Church (Old Court - Saint Anthony Church), a Romanian Orthodox church in Bucharest, Romania Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Ceahlău National Park</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>25.939533,46.9489882,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Ceahl%C4%83u+National+Park">Ceahlău National Park on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (4,345 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/scenic-view-stunning-mountains-seen-600nw-2481574817.jpg" width="400" /></p>
+    <p><em>A scenic view of stunning mountains seen through dense forest in Ceahlau mountain, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Julius Römer chalet</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>25.5545826,45.5721453,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Julius+R%C3%B6mer+chalet">Julius Römer chalet on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (4,000 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/brasov-romania-view-postavarul-massif-600nw-2725506727.jpg" width="400" /></p>
+    <p><em>Brasov, Romania. View from Postavarul Massif, Poiana Brasov Resort.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Matthias Rex Monument</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>23.5898565,46.7695087,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Matthias+Rex+Monument">Matthias Rex Monument on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (3,492 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/clujnapoca-romania-july-29-2023-600nw-2660880343.jpg" width="400" /></p>
+    <p><em>Cluj-Napoca, Romania - July 29 2023: Matthias Corvinus Monument at Unirii Square in Cluj-Napoca, Romania Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Cabana Ciucas Peak</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>25.9476561,45.5094751,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Cabana+Ciucas+Peak">Cabana Ciucas Peak on Google Maps</a></h3>
+    <p>Rating: 4.4/5 (3,379 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/scenic-view-ciucas-mountains-romania-600nw-2661407285.jpg" width="400" /></p>
+    <p><em>A scenic view of the Ciucas Mountains in Romania under a cloudy day</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>The Patriarchal Cathedral</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>26.0978002,44.4245792,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/The+Patriarchal+Cathedral">The Patriarchal Cathedral on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (3,312 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/bucharest-romania-october-23-2025-600nw-2693588179.jpg" width="400" /></p>
+    <p><em>Bucharest, Romania – October 23 2025: Wide view of the Romanian National Cathedral as final preparations are made before its official inauguration on October 26. Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Bâlea Lake</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>24.6170796,45.6031928,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/B%C3%A2lea+Lake">Bâlea Lake on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (3,228 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/lake-lacul-glacial-located-mountains-260nw-2409121225.jpg" width="400" /></p>
+    <p><em>Bâlea Lake (Lacul Bâlea) is a glacial lake located in the Făgăraș Mountains of the Southern Carpathians, in central Romania. It is one of the most popular and picturesque destinations in the region.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Dormition of the Mother of God Metropolitan Cathedral</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>23.5964659,46.77171,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Dormition+of+the+Mother+of+God+Metropolitan+Cathedral">Dormition of the Mother of God Metropolitan Cathedral on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (3,100 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/clujnapoca-romania-july-29-2023-600nw-2660881091.jpg" width="400" /></p>
+    <p><em>Cluj-Napoca, Romania - July 29 2023: Dormition of the Theotokos Cathedral in Cluj-Napoca, Romania Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Castelul Károlyi</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>22.4671392,47.6837787,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Castelul+K%C3%A1rolyi">Castelul Károlyi on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (3,094 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/carei-09202025-castle-interior-wooden-600nw-2698317661.jpg" width="400" /></p>
+    <p><em>Carei, România - 09.20.2025: Károlyi Castle interior. Wooden stairs, large windows and red accents. Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Cheile Nerei-Beușnița National Park</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>21.8877902,44.9558443,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Cheile+Nerei-Beu%C8%99ni%C8%9Ba+National+Park">Cheile Nerei-Beușnița National Park on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (2,887 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/parcul-cheile-nerei-beautiful-waterfalls-600nw-2732208923.jpg" width="400" /></p>
+    <p><em>Parcul Naţional Cheile Nerei - Beușnița with its beautiful waterfalls and landscapes</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>The City Hall of Oradea</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>21.9280753,47.0558017,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/The+City+Hall+of+Oradea">The City Hall of Oradea on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (2,787 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/oradea-romania-september-26-2025-600nw-2692097843.jpg" width="400" /></p>
+    <p><em>Oradea, Romania - September 26, 2025: Cityscape with riverbank, town hall and church in Oradea in western Romania Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>The Central Park</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>22.8747143,47.7927917,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/The+Central+Park">The Central Park on Google Maps</a></h3>
+    <p>Rating: 4.4/5 (2,742 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/scenic-view-satu-mare-city-260nw-2655497557.jpg" width="400" /></p>
+    <p><em>Scenic view of Satu Mare, a city in northern Romania.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Odeon Theatre</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>26.0986416,44.4359224,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Odeon+Theatre">Odeon Theatre on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (2,693 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/bucharest-romania-august-03-2023-600nw-2664039145.jpg" width="400" /></p>
+    <p><em>Bucharest, Romania - August 03 2023: Odeon Theatre on Calea Victoriei in Bucharest, Romania Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Ensana Sovata</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>25.0877666,46.6020898,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Ensana+Sovata">Ensana Sovata on Google Maps</a></h3>
+    <p>Rating: 4.2/5 (2,647 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/aerial-view-sovata-resort-romania-600nw-2696078761.jpg" width="400" /></p>
+    <p><em>Aerial view of the Sovata resort in Romania in autumn</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>The Council&#x27;s Tower</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>24.1521446,45.7976322,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/The+Council%27s+Tower">The Council&#x27;s Tower on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (2,559 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/sunrise-view-city-hall-sibiu-260nw-2619125751.jpg" width="400" /></p>
+    <p><em>Sunrise view of the City hall in Sibiu, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Targul de Craciun din Sibiu</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>24.1517662,45.7966772,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Targul+de+Craciun+din+Sibiu">Targul de Craciun din Sibiu on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (2,478 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/sibiu-romania-christmas-market-winter-600nw-2369078109.jpg" width="400" /></p>
+    <p><em>Sibiu, Romania. Christmas Market winter tale, famous winter fair in Transylvania.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Coronation Cathedral</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>23.5697697,46.0684313,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Coronation+Cathedral">Coronation Cathedral on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (2,441 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/amazing-cityscape-coronation-orthodox-roman-260nw-2458846737.jpg" width="400" /></p>
+    <p><em>Amazing cityscape with Coronation Orthodox and Roman Catholic cathedrals inside fortified Alba Carolina Fortress.  Location: Alba Iulia, Alba County, Romania, Europe</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>The Merry Cemetery</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>23.6949483,47.9712807,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/The+Merry+Cemetery">The Merry Cemetery on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (2,102 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/romania-29102021-merry-cemetery-unique-600nw-2691411091.jpg" width="400" /></p>
+    <p><em>Săpânța, Romania, 29.10.2021: The Merry Cemetery in Maramureș, unique worldwide, famous for its blue-painted wooden crosses and funny epitaphs (Cimitirul Vesel din Săpânța, Maramureș) Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Catedrala Sfântul Nicolae</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>25.5813526,45.6356011,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Catedrala+Sf%C3%A2ntul+Nicolae">Catedrala Sfântul Nicolae on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (1,952 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/brasov-romania-st-nicholas-church-600nw-2725506725.jpg" width="400" /></p>
+    <p><em>Brasov, Romania. St. Nicholas Church in old town.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Rimetea - Torockó</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>23.566412,46.4529846,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Rimetea+-+Torock%C3%B3">Rimetea - Torockó on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (1,941 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/beautiful-houses-village-rimetea-apuseni-600nw-2673172839.jpg" width="400" /></p>
+    <p><em>beautiful houses in the village of Rimetea in the Apuseni Mountains in Transylvania, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>“Saint Mary” Evangelical Cathedral</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>24.1500967,45.7977427,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/%E2%80%9CSaint+Mary%E2%80%9D+Evangelical+Cathedral">“Saint Mary” Evangelical Cathedral on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (1,938 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/spire-lutheran-evangelical-cathedral-tower-600nw-2713209307.jpg" width="400" /></p>
+    <p><em>Spire of Lutheran Evangelical Cathedral tower, historic building facades, and eyes of Sibiu windows in historic center, viewed through archway. Cityscape with city symbols and tourist attractions.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Water Castle</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>22.6520532,44.6298884,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Water+Castle">Water Castle on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (1,755 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/panorama-view-drobetaturnu-severin-romania-600nw-2621297561.jpg" width="400" /></p>
+    <p><em>Panorama view of Drobeta-Turnu Severin in Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Oneiro Resort</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>28.6244295,44.3027541,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Oneiro+Resort">Oneiro Resort on Google Maps</a></h3>
+    <p>Rating: 4.5/5 (1,590 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/aerial-view-empty-beach-coastal-600nw-2712171375.jpg" width="400" /></p>
+    <p><em>Aerial view of the empty beach, coastal area of ​​Mamaia Nord resort - Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Sohodol Gorges</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>23.1395677,45.1367415,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Sohodol+Gorges">Sohodol Gorges on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (1,367 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/aerial-view-sohodol-gorge-towards-600nw-2640482903.jpg" width="400" /></p>
+    <p><em>Aerial view of the Sohodol Gorge towards Runcu commune, Gorj county, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>The Council&#x27;s House</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>25.5889257,45.6423483,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/The+Council%27s+House">The Council&#x27;s House on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (1,265 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/brasov-romania-july-5-2016-600nw-2136835585.jpg" width="400" /></p>
+    <p><em>Brasov, Romania - July 5, 2016: Casa Sfatului - Council House on Council Square in old part of Brasov city, Transylvania, Romania Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Transalpina King&#x27;s Road</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>23.6561586,45.3740981,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Transalpina+King%27s+Road">Transalpina King&#x27;s Road on Google Maps</a></h3>
+    <p>Rating: 4.9/5 (1,171 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/man-stand-on-top-surrounded-600nw-1661537383.jpg" width="400" /></p>
+    <p><em>The man stand on top surrounded by fog and low clouds near Transalpina road. This is one of  most beautiful alpine routes and highest mountain asphalt road in Romania.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Danube&#x27;s Big Boilers</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>22.2686186,44.6043762,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Danube%27s+Big+Boilers">Danube&#x27;s Big Boilers on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (1,155 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/view-danube-river-orsova-city-600nw-2644801815.jpg" width="400" /></p>
+    <p><em>View of Danube river and Orsova city, waterfront view. Orsova, Romania, Europe</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Mures Floodplain Natural Park</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>21.2733513,46.1578845,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Mures+Floodplain+Natural+Park">Mures Floodplain Natural Park on Google Maps</a></h3>
+    <p>Rating: 4.5/5 (1,069 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/scenic-summer-landscape-lunca-muresului-600nw-2672891565.jpg" width="400" /></p>
+    <p><em>Scenic summer landscape of Lunca Muresului National Park, Arad County, Romania, Europe</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Transfăgărășan Panoramic View</name>
+    <styleUrl>#green</styleUrl>
+    <Point><coordinates>24.6175256,45.6094784,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Transf%C4%83g%C4%83r%C4%83%C8%99an+Panoramic+View">Transfăgărășan Panoramic View on Google Maps</a></h3>
+    <p>Rating: 4.9/5 (1,022 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/view-transfagarash-highway-valley-mountains-260nw-1634858983.jpg" width="400" /></p>
+    <p><em>View of Transfagarash highway and valley in mountains of Romania. The most beautiful road in Europe. Location: Carpathian mountains, Fagaras ridge, Romania, Europe.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Palace of the Deposits and Consignments</name>
+    <styleUrl>#yellow</styleUrl>
+    <Point><coordinates>26.0967367,44.432006,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Palace+of+the+Deposits+and+Consignments">Palace of the Deposits and Consignments on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (819 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/bucharest-romania-september-24-2019-600nw-2712566625.jpg" width="400" /></p>
+    <p><em>Bucharest, Romania – September 24 2019: View of the historic CEC Palace with its iconic dome, ornate columns and detailed façade, framed by classical buildings in the old town. Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Rânca Ski Resort</name>
+    <styleUrl>#yellow</styleUrl>
+    <Point><coordinates>23.6902366,45.2914175,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/R%C3%A2nca+Ski+Resort">Rânca Ski Resort on Google Maps</a></h3>
+    <p>Rating: 4.4/5 (759 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/ranca-romania-february-10-2024-600nw-2691630743.jpg" width="400" /></p>
+    <p><em>Ranca, Romania - February 10, 2024: Ski resort in winter full with family memberes skiing and snowboarding. Sport recreation in mountains in full winter season.. Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Church of the Nativity of the Virgin (The wooden church in Ieud Hill)</name>
+    <styleUrl>#yellow</styleUrl>
+    <Point><coordinates>24.2365333,47.6763967,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Church+of+the+Nativity+of+the+Virgin+%28The+wooden+church+in+Ieud+Hill%29">Church of the Nativity of the Virgin (The wooden church in Ieud Hill) on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (750 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/oldest-wooden-church-romania-located-600nw-2665966053.jpg" width="400" /></p>
+    <p><em>Oldest wooden church in Romania, located in Oas County heritage park in Negresti-Oas, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Vulcanul Racoș</name>
+    <styleUrl>#yellow</styleUrl>
+    <Point><coordinates>25.418352,46.0318182,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Vulcanul+Raco%C8%99">Vulcanul Racoș on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (741 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/aerial-view-volcanic-crater-racos-260nw-1673561905.jpg" width="400" /></p>
+    <p><em>aerial view of volcanic crater in Racos village, Brasov county, Romania - foggy autumn morning</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>&quot;The Holy Trinity&quot; Church</name>
+    <styleUrl>#yellow</styleUrl>
+    <Point><coordinates>24.7957829,46.2219316,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/%22The+Holy+Trinity%22+Church">&quot;The Holy Trinity&quot; Church on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (725 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/holy-trinity-church-romania-600nw-2691730443.jpg" width="400" /></p>
+    <p><em>Holy Trinity Church in Sighișoara, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>OK by Ovo</name>
+    <styleUrl>#yellow</styleUrl>
+    <Point><coordinates>28.5785186,43.7452056,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/OK+by+Ovo">OK by Ovo on Google Maps</a></h3>
+    <p>Rating: 4.5/5 (688 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/holiday-resort-vama-veche-black-260nw-2163647955.jpg" width="400" /></p>
+    <p><em>Holiday resort Vama Veche at Black Sea Coast, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Holy Trinity Cathedral</name>
+    <styleUrl>#yellow</styleUrl>
+    <Point><coordinates>23.572779,47.6463342,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Holy+Trinity+Cathedral">Holy Trinity Cathedral on Google Maps</a></h3>
+    <p>Rating: 4.5/5 (528 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/aerial-view-baia-mare-city-260nw-2110062149.jpg" width="400" /></p>
+    <p><em>Aerial view of Baia Mare city with roof tops and the Catholic Cathedral in Baia Mare, Maramures, Romania; Assumption of Mary Cathedral or Saint Mary, the greek-catholic cathedral in Baia Mare</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Venus Beach</name>
+    <styleUrl>#yellow</styleUrl>
+    <Point><coordinates>28.5923525,43.841855,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Venus+Beach">Venus Beach on Google Maps</a></h3>
+    <p>Rating: 4.4/5 (485 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/sunset-over-saturn-venus-beach-600nw-2698146183.jpg" width="400" /></p>
+    <p><em>Sunset over Saturn and Venus Beach, Mangalia, Romania October 25, 2025</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Babou Maramures campsite/pension</name>
+    <styleUrl>#yellow</styleUrl>
+    <Point><coordinates>23.8936372,47.7459901,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Babou+Maramures+campsite%2Fpension">Babou Maramures campsite/pension on Google Maps</a></h3>
+    <p>Rating: 4.9/5 (369 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/traditional-haylofts-landscape-around-breb-600nw-2673174069.jpg" width="400" /></p>
+    <p><em>traditional haylofts and the landscape around Breb, Maramures in Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>National Bank of Romania</name>
+    <styleUrl>#yellow</styleUrl>
+    <Point><coordinates>26.0998737,44.4332234,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/National+Bank+of+Romania">National Bank of Romania on Google Maps</a></h3>
+    <p>Rating: 4.4/5 (320 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/detail-building-housing-national-bank-260nw-747297106.jpg" width="400" /></p>
+    <p><em>Detail of the building housing the National Bank of Romania (BNR) in downtown Bucharest, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Făgăraș Mountains</name>
+    <styleUrl>#yellow</styleUrl>
+    <Point><coordinates>24.7499999,45.5833333,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/F%C4%83g%C4%83ra%C8%99+Mountains">Făgăraș Mountains on Google Maps</a></h3>
+    <p>Rating: 4.9/5 (318 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/beautiful-panoramic-view-fagaras-mountains-600nw-2696118665.jpg" width="400" /></p>
+    <p><em>Beautiful panoramic view of the Fagaras Mountains covered with snow in the Carpathian Range, Romania. Stunning winter landscape with alpine peaks, frozen valleys, and bright sunlight over European wil</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>LacertA Winery</name>
+    <styleUrl>#yellow</styleUrl>
+    <Point><coordinates>26.4686171,45.0724699,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/LacertA+Winery">LacertA Winery on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (292 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/vineyard-hills-near-village-valea-600nw-2702801773.jpg" width="400" /></p>
+    <p><em>Vineyard hills near the village of Valea Scheilor in the Dealu Mare vineyard, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Apuseni Mountains</name>
+    <styleUrl>#yellow</styleUrl>
+    <Point><coordinates>23.0041257,46.5073299,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Apuseni+Mountains">Apuseni Mountains on Google Maps</a></h3>
+    <p>Rating: 4.9/5 (246 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/church-apuseni-mountains-romania-beautiful-600nw-2316095919.jpg" width="400" /></p>
+    <p><em>Church from Apuseni Mountains, Romania in a beautiful morning a little bit of fog with the sunlight touching the hills</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Lacul Nucsoara</name>
+    <styleUrl>#yellow</styleUrl>
+    <Point><coordinates>24.782349,45.337577,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Lacul+Nucsoara">Lacul Nucsoara on Google Maps</a></h3>
+    <p>Rating: 4.4/5 (168 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/aerial-view-lake-nucsoara-arges-600nw-2663447627.jpg" width="400" /></p>
+    <p><em>Aerial view of a lake in Nucsoara, Arges, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Parâng Mountains</name>
+    <styleUrl>#yellow</styleUrl>
+    <Point><coordinates>23.5583418,45.3394076,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Par%C3%A2ng+Mountains">Parâng Mountains on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (146 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/fir-logs-prepared-transport-on-600nw-2257905541.jpg" width="400" /></p>
+    <p><em>Fir logs prepared for transport on a forest road in the Parang Mountains, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Green Hill Panoramic</name>
+    <styleUrl>#yellow</styleUrl>
+    <Point><coordinates>25.3228967,45.6226322,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Green+Hill+Panoramic">Green Hill Panoramic on Google Maps</a></h3>
+    <p>Rating: 5/5 (137 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/scenic-view-nature-landscape-poiana-260nw-2299717585.jpg" width="400" /></p>
+    <p><em>Scenic view of nature landscape in Poiana Marului, Brasov County, Romania. Scenic view over the hills in Transilvania, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Cheile Țăsnei</name>
+    <styleUrl>#yellow</styleUrl>
+    <Point><coordinates>22.5019914,44.9696259,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Cheile+%C8%9A%C4%83snei">Cheile Țăsnei on Google Maps</a></h3>
+    <p>Rating: 4.9/5 (126 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/aerial-drone-photography-tasnei-gorges-600nw-2645155795.jpg" width="400" /></p>
+    <p><em>Aerial drone photography of Tasnei Gorges in Mehedinti Mountains, Romania, Europe</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Poiana</name>
+    <styleUrl>#yellow</styleUrl>
+    <Point><coordinates>25.5205386,45.5760616,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Poiana">Poiana on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (109 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/group-skiers-colorful-gear-on-600nw-2711785239.jpg" width="400" /></p>
+    <p><em>Group of skiers in colorful gear on foggy mountain slope. December 15, 2024 Poiana Brasov Romania. Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>&quot;Birth of Saint John the Baptist&quot; Church</name>
+    <styleUrl>#yellow</styleUrl>
+    <Point><coordinates>26.3687278,46.9329403,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/%22Birth+of+Saint+John+the+Baptist%22+Church">&quot;Birth of Saint John the Baptist&quot; Church on Google Maps</a></h3>
+    <p>Rating: 4.7/5 (105 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/piatra-romania-october-15-2025-600nw-2704887013.jpg" width="400" /></p>
+    <p><em>PIATRA NEAMț, ROMANIA - OCTOBER 15, 2025: Church of Saint Ioan Iacob the Hozevite, Romania Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Iron Gates Natural Park</name>
+    <styleUrl>#orange</styleUrl>
+    <Point><coordinates>22.3004007,44.6870692,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Iron+Gates+Natural+Park">Iron Gates Natural Park on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (77 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/passenger-vessel-cruising-through-picturesque-600nw-2502511917.jpg" width="400" /></p>
+    <p><em>Passenger vessel cruising through the picturesque Iron Gate Gorge on a summer vacation trip</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Muntele Oslea</name>
+    <styleUrl>#orange</styleUrl>
+    <Point><coordinates>22.8929112,45.2372254,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Muntele+Oslea">Muntele Oslea on Google Maps</a></h3>
+    <p>Rating: 4.8/5 (49 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/climbers-on-oslea-mountains-valcan-600nw-1963748710.jpg" width="400" /></p>
+    <p><em>Climbers on Oslea Mountains, Valcan Mountains, Romania</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Catedrala Ortodoxă Sfinții Apostoli Petru și Pavel - Sebeş</name>
+    <styleUrl>#orange</styleUrl>
+    <Point><coordinates>23.5736287,45.9543485,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Catedrala+Ortodox%C4%83+Sfin%C8%9Bii+Apostoli+Petru+%C8%99i+Pavel+-+Sebe%C5%9F">Catedrala Ortodoxă Sfinții Apostoli Petru și Pavel - Sebeş on Google Maps</a></h3>
+    <p>Rating: 4.2/5 (29 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/alba-county-transylvania-romania-orthodox-600nw-2657035121.jpg" width="400" /></p>
+    <p><em>Sebeș, Alba county, Transylvania, Romania: The Orthodox Cathedral of St. Peter and St. Paul reflected in the lake water at sunset</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Muntii Giurgeului</name>
+    <styleUrl>#orange</styleUrl>
+    <Point><coordinates>25.5833333,46.8833333,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Muntii+Giurgeului">Muntii Giurgeului on Google Maps</a></h3>
+    <p>Rating: 4.6/5 (10 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/scenic-view-valley-gheorgheni-hungarian-600nw-2676156485.jpg" width="400" /></p>
+    <p><em>Scenic view of the valley of Gheorgheni (Hungarian: Gyergyói-medence, Romanian: Depresiunea Giurgeului) in the Carpathian Mountains, Romania.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Rogojel</name>
+    <styleUrl>#orange</styleUrl>
+    <Point><coordinates>22.8482887,46.7867083,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Rogojel">Rogojel on Google Maps</a></h3>
+    <p>Rating: 4.9/5 (7 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/picturesque-summer-sunrise-rogojel-village-260nw-2177521765.jpg" width="400" /></p>
+    <p><em>Picturesque summer sunrise in Rogojel village. Haystacks on mountain lawn. Attractive morning scene of Cluj County, Romania, Europe. Beauty of countryside concept background.</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Black Sea Naturist Sailing</name>
+    <styleUrl>#orange</styleUrl>
+    <Point><coordinates>28.6632717,44.174692,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Black+Sea+Naturist+Sailing">Black Sea Naturist Sailing on Google Maps</a></h3>
+    <p>Rating: 5.0/5 (5 reviews)</p>
+    <p><img src="https://www.shutterstock.com/image-photo/constanca-romania-may-05-2024-600nw-2717556147.jpg" width="400" /></p>
+    <p><em>Constanca Romania May 05 2024 black sea boats moored in a vibrant romanian marina, offering leisure and sea adventures Editorial</em></p>
+  ]]></description>
+  </Placemark>
+  <Placemark>
+    <name>Viaduct Poiana Teiului</name>
+    <styleUrl>#red</styleUrl>
+    <Point><coordinates>25.9637176,47.0891465,0</coordinates></Point>
+    <description><![CDATA[
+    <h3><a href="https://www.google.com/maps/search/Viaduct+Poiana+Teiului">Viaduct Poiana Teiului on Google Maps</a></h3>
+    <p>Rating: 4.6/5</p>
+    <p><img src="https://www.shutterstock.com/image-photo/aerial-view-road-intersection-poiana-260nw-2322374687.jpg" width="400" /></p>
+    <p><em>aerial view of road intersection. Poiana Largului viaduct in Romania</em></p>
+  ]]></description>
+  </Placemark>
 </Document>
 </kml>

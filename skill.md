@@ -1,6 +1,6 @@
 ---
 name: shutterstock2kml
-description: Search Shutterstock for photos by queries, find place ratings via web search, geocode with Nominatim, and generate a styled KML file with colored icons by visit-worthiness.
+description: Search Shutterstock for photos by queries, resolve each photo to a real Google Maps place via Playwright (Chromium) — extracting name, coordinates, rating and review count in one shot — and generate a styled KML file with colored icons by visit-worthiness.
 user_invocable: true
 ---
 
@@ -12,51 +12,53 @@ Working directory: `/Users/alekseygrachev/git/shutterstock2kml`
 
 ## Stage 1: Generate queries.json
 
-Create `queries.json` with an array of search queries. Start with a reasonable set of specific queries for the target region. Example for Romania:
-
-```json
-["Romania landmarks", "Romania castles", "Romania monasteries", "Transylvania", "Bucharest architecture", "Romanian Carpathians"]
-```
+Create `queries.json` with an array: ["Romania"]
 
 Ask the user what region/topic to search for if not obvious from context.
 
-## Stage 2: Shutterstock API -> places.json
+## Stage 2: Shutterstock scraping -> places.json
 
-Read `.env` file for `SHUTTERSTOCK_API_KEY` and `SHUTTERSTOCK_API_SECRET`.
+Scrape Shutterstock search results with **patchright** (a Playwright fork that
+patches automation leaks) + **system Chrome** (`channel="chrome"`) + a
+**persistent profile** + **headful mode**. This combo defeats DataDome — plain
+Playwright (even with `playwright-stealth`) is reliably blocked, and the
+official API requires paid keys we no longer use.
 
-For each query in `queries.json`, call the Shutterstock API using Bash:
+### Setup
 
 ```
-source .env && curl -s -u "${SHUTTERSTOCK_API_KEY}:${SHUTTERSTOCK_API_SECRET}" \
-  "https://api.shutterstock.com/v2/images/search?query=QUERY&page=PAGE&per_page=20&image_type=photo&sort=popular&view=full"
+.venv/bin/pip install patchright
+# patchright reuses Playwright's binary; no extra install. System Chrome must
+# be installed at /Applications/Google Chrome.app (macOS) or `google-chrome` in PATH (Linux).
 ```
 
-Parameters:
-- `image_type=photo` — exclude vectors and illustrations
-- `sort=popular` — most popular first
-- `view=full` — includes keywords and categories in response
-- `page=1` through `page=5`, `per_page=20`
+### Per-page flow
 
-From each response, extract using python3:
-- `description` from `.data[].description`
-- `preview_url` from `.data[].assets.preview_1000.url` (fallback to `.assets.preview.url`)
-- `keywords` from `.data[].keywords` (array of strings)
-- `categories` from `.data[].categories` (array of objects with `.name`)
-- `image_type` from `.data[].image_type` (should all be "photo" but verify)
+For each query in `queries.json`:
+1. Warm up DataDome cookies — visit `https://www.shutterstock.com/` first, mouse-jiggle, wait ~2.5s.
+2. Navigate to `https://www.shutterstock.com/search/<q>?image_type=photo` (page 1) or `…?image_type=photo&page=N` (N>1). `?page=1` gets normalised to the bare URL and triggers `ERR_ABORTED`, so omit it.
+3. Poll `main img[alt]` up to ~50s for first content; then scroll 12 × `window.innerHeight` to trigger lazy load.
+4. Extract `{description, preview_url}` from `main img[alt]` — `description = img.alt`, `preview_url = img.currentSrc || img.src`. Drop items where alt < 4 chars or src starts with `data:`.
 
-Deduplicate by description. Save as `places.json` — array of objects:
+Important: do **not** filter by `img.closest('a[href*="/image-photo/"]')` — Shutterstock places the anchor as a sibling, not an ancestor, so `closest()` returns null and you get zero results. Iterate `main img[alt]` directly.
+
+Reuse the same browser context across all pages and queries — re-warming each time looks more bot-like and is wasteful.
+
+Save as `places.json` — array of objects:
 ```json
 [
   {
     "description": "...",
-    "preview_url": "https://...",
-    "keywords": ["keyword1", "keyword2"],
-    "categories": ["Travel", "Landmarks"]
+    "preview_url": "https://www.shutterstock.com/image-photo/...-260nw-...jpg",
+    "keywords": [],
+    "categories": []
   }
 ]
 ```
 
-## Stage 3: LLM filtering -> places_filtered.json
+`keywords` / `categories` come back empty (the search results page doesn't expose them — would require clicking each photo). Stage 4 (KML) handles the empty case via `or []`.
+
+## Stage 2b: LLM filtering -> places_filtered.json + places_dropped.json
 
 Read `places.json` and analyze each entry. Keep ONLY entries that refer to **specific, real, visitable geographic places** (landmarks, buildings, natural sites, cities, etc.).
 
@@ -65,95 +67,119 @@ Discard entries that are:
 - Studio shots, portraits, food photos
 - Abstract or artistic images
 
-For each kept entry, extract/infer the **place name** from description + keywords. Save as `places_filtered.json`:
-```json
-[
-  {
-    "place_name": "Bran Castle",
-    "description": "...",
-    "preview_url": "https://...",
-    "keywords": [...],
-    "categories": [...]
-  }
-]
-```
+Also strip trailing `Stock Photo` / `Stock Image` suffixes Shutterstock attaches to alt text.
 
-Deduplicate by `place_name` (keep the entry with the best/most descriptive entry).
+Write **both**:
+- `places_filtered.json` — entries that passed the filter
+- `places_dropped.json` — entries that were filtered out (same shape as input, with the suffix-stripped description), so the decisions can be audited / refined.
 
-## Stage 4: Geocoding with Nominatim -> places_geo.json
+## Stage 3: Resolve places via Playwright -> places_rated.json
 
-For each place in `places_filtered.json`, geocode using Nominatim (free, no API key needed):
+Input: `places_filtered.json` if present, else `places.json` (the resolver auto-falls-back).
+
+Use **Playwright (Chromium, headless)** to query Google Maps with each entry. Google Maps acts as **filter + geocoder + rating source** all at once: a single page render gives us name, coordinates, rating and review count. No Nominatim, no separate LLM filter.
+
+### Setup
 
 ```
-curl -s "https://nominatim.openstreetmap.org/search?q=PLACE_NAME&format=json&limit=1" \
-  -H "User-Agent: shutterstock2kml/1.0"
+python3 -m venv .venv
+.venv/bin/pip install playwright
+.venv/bin/python -m playwright install chromium
 ```
 
-**IMPORTANT**: Add 1-second delay between requests (Nominatim rate limit).
+### Per-entry fetch
 
-Extract `lat` and `lon` from the first result. Skip places that return no results.
-
-Save as `places_geo.json`:
-```json
-[
-  {
-    "place_name": "Bran Castle",
-    "lat": 45.515,
-    "lng": 25.367,
-    "description": "...",
-    "preview_url": "https://...",
-    "keywords": [...],
-    "categories": [...]
-  }
-]
+For each Shutterstock entry, build a search query from the description (append the target country/region — e.g. " Romania" — to disambiguate). Navigate to:
+```
+https://www.google.com/maps/search/<URL-encoded query>
 ```
 
-## Stage 5: Ratings via WebSearch -> places_rated.json
+Wait up to ~10s for the place card (`div.F7nice`) to render, then read everything from the page in one `page.evaluate`:
 
-For each place in `places_geo.json`, use the `WebSearch` tool to search for:
-`"PLACE_NAME" rating reviews`
+```javascript
+() => {
+  const root = document.querySelector('[role="main"]') || document.body;
+  const titleEl = root.querySelector('h1.DUwDvf, h1[class*="DUwDvf"]');
+  const node = root.querySelector('div.F7nice, div[class*="F7nice"]');
+  if (!node || !titleEl) return null;
+  const ratingEl = node.querySelector('span[aria-hidden="true"]');
+  const countEl  = node.querySelector('span[aria-label*="review"]');
+  return {
+    place_name:  titleEl.innerText.trim(),
+    rating_text: ratingEl ? ratingEl.innerText.trim() : null,
+    count_label: countEl  ? countEl.getAttribute('aria-label') : null,
+  };
+}
+```
 
-Extract from search results:
-- `rating` (float, e.g. 4.5) — Google Maps or TripAdvisor rating
-- `review_count` (int) — number of reviews
-- `google_maps_link` — format as `https://www.google.com/maps/search/PLACE_NAME` (URL-encoded)
+Then extract `lat` / `lng` from the URL Google Maps redirects to after a successful resolution. Two URL shapes are seen in the wild — match both, **`!3d!4d` first** since it appears alongside the place card while `@…` may still reflect the old viewport:
+- `…/@<LAT>,<LNG>,<ZOOM>z/…`  → regex `@(-?\d+\.\d+),(-?\d+\.\d+)`
+- `…!3d<LAT>!4d<LNG>…`         → regex `!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)`
 
-If rating/reviews not found, set `rating: null`, `review_count: 0`.
+The URL update can lag behind the card render — poll `page.url` for ~5s after the card is found.
 
-Use Agent subagents to parallelize WebSearch calls (batch of 5-10 at a time).
+- `rating` = `parseFloat(rating_text)` (may be null)
+- `review_count` = digits extracted from `count_label` (e.g. `"73,417 reviews"` -> `73417`; may be null)
+- `place_name` = `titleEl.innerText` — the official Google Maps name (often differs from the keyword we searched with — that's fine, this is the canonical name)
+- If `div.F7nice` / `h1.DUwDvf` never render within the timeout, **drop the entry** — Google Maps couldn't resolve a real place, so the Shutterstock photo isn't a visitable location for our purposes.
+
+This single step replaces what used to be three separate stages (LLM filtering, Nominatim geocoding, rating lookup).
+
+### Parallelization
+
+Use **async Playwright** (`playwright.async_api`) with N parallel browser contexts under one shared `chromium.launch(headless=True)`. Default N = 12 (override via `STAGE3_WORKERS` env var). **Do not** use `ThreadPoolExecutor` with sync Playwright — it crashes (greenlet thread error). Either go fully async, or run sync Playwright in subprocess workers.
+
+User-Agent override is recommended (some networks block default Playwright UA):
+```
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+```
+
+### Deduplication
+
+Google Maps will resolve many Shutterstock photos to the same canonical place (e.g. dozens of Bran Castle shots). Deduplicate by `place_name` after resolution, keeping the entry whose preview / description is most informative.
+
+### Output
+
+Set `google_maps_link` to `https://www.google.com/maps/search/<URL-encoded place name>` for the human user.
 
 Save as `places_rated.json`:
 ```json
 [
   {
-    "place_name": "Bran Castle",
-    "lat": 45.515,
-    "lng": 25.367,
-    "rating": 4.5,
-    "review_count": 12345,
-    "google_maps_link": "https://www.google.com/maps/search/Bran+Castle",
+    "place_name": "Peleș Castle",
+    "lat": 45.3601,
+    "lng": 25.5427,
+    "rating": 4.7,
+    "review_count": 73417,
+    "google_maps_link": "https://www.google.com/maps/search/Peles+Castle",
     "description": "...",
     "preview_url": "https://...",
-    "keywords": [...],
-    "categories": [...]
+    "keywords": [],
+    "categories": []
   }
 ]
 ```
 
-## Stage 6: Generate result.kml
+`keywords`/`categories` are usually empty (we no longer use the API). Stage 4 falls back to `place_name + description` for category detection.
+
+## Stage 4: Generate result.kml
 
 Generate `result.kml` from `places_rated.json`.
 
-### Icon color logic (visit-worthiness)
+### Filter by rating
 
-Based on rating AND review count, assign a color:
-- **Green** (must visit): rating >= 4.5 AND review_count >= 1000
-- **Yellow** (worth visiting): rating >= 4.0 AND review_count >= 100
-- **Red** (skip or unknown): everything else (low rating, few reviews, or no data)
+Drop entries with `rating < 3.8`. Entries where `rating is None` (Google Maps card had no rating) pass through.
+
+### Icon color logic (popularity by review count)
+
+Based on Google Maps `review_count`:
+- **Green**: `review_count > 1000`
+- **Yellow**: `100 ≤ review_count ≤ 1000`
+- **Red**: `review_count < 100` OR `review_count is None`
 
 ### Category detection
 
-Determine category from keywords and categories arrays:
+Determine category from `place_name + description + keywords + categories` (the latter two are usually empty after Stage 2 was migrated off the API):
 - `castle` / `fortress` / `palace` -> castle
 - `monastery` / `church` / `cathedral` / `temple` -> religious
 - `mountain` / `lake` / `waterfall` / `cave` / `gorge` / `nature` / `park` -> nature
@@ -187,6 +213,8 @@ Style IDs follow the pattern: `#COLOR-CATEGORY` (e.g. `#green-castle`, `#yellow-
 
 ### KML Structure
 
+Flat list — no `<Folder>` grouping. Sort placemarks by `review_count` desc, entries with no `review_count` go to the end.
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
@@ -195,26 +223,7 @@ Style IDs follow the pattern: `#COLOR-CATEGORY` (e.g. `#green-castle`, `#yellow-
 
   <!-- All Style definitions here (3 colors x 6 categories = 18 styles) -->
 
-  <!-- Placemarks grouped by category in Folders -->
-  <Folder>
-    <name>Castles</name>
-    <!-- Placemarks with styleUrl="#COLOR-castle" -->
-  </Folder>
-  <Folder>
-    <name>Religious Sites</name>
-  </Folder>
-  <Folder>
-    <name>Nature</name>
-  </Folder>
-  <Folder>
-    <name>Museums</name>
-  </Folder>
-  <Folder>
-    <name>Urban</name>
-  </Folder>
-  <Folder>
-    <name>Other</name>
-  </Folder>
+  <!-- All Placemarks at top level, sorted by review_count desc -->
 </Document>
 </kml>
 ```
@@ -230,14 +239,14 @@ Style IDs follow the pattern: `#COLOR-CATEGORY` (e.g. `#green-castle`, `#yellow-
   </Point>
   <description><![CDATA[
     <h3><a href="GOOGLE_MAPS_LINK">PLACE_NAME on Google Maps</a></h3>
-    <p>Rating: RATING/5 (REVIEW_COUNT reviews)</p>
+    <p>Rating: RATING/5</p>            <!-- omit "(N reviews)" if review_count is null -->
     <p><img src="PREVIEW_URL" width="400" /></p>
     <p><em>DESCRIPTION</em></p>
   ]]></description>
 </Placemark>
 ```
 
-Sort placemarks within each folder by rating (highest first).
+Sort all placemarks by `review_count` desc; entries without review_count go to the end.
 
 ## Verification
 
