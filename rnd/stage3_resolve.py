@@ -212,10 +212,10 @@ async def worker(name, browser, queue, results, region):
         try:
             resolved_list = await resolve_one(page, query)
         except Exception as e:
-            print(f"  [{name}] DROP: {desc[:60]!r} -> ERR {type(e).__name__}", file=sys.stderr)
+            print(f"  [{name}] DROP: {desc[:160]!r} -> ERR {type(e).__name__}", file=sys.stderr)
             resolved_list = []
         if not resolved_list:
-            print(f"  [{name}] DROP: {desc[:60]!r}", file=sys.stderr)
+            print(f"  [{name}] DROP: {desc[:160]!r}", file=sys.stderr)
             continue
         kept_in_query = 0
         for resolved in resolved_list:
@@ -238,7 +238,7 @@ async def worker(name, browser, queue, results, region):
             results.append(merged)
             kept_in_query += 1
         if kept_in_query == 0:
-            print(f"  [{name}] DROP (feed all-filtered): {desc[:60]!r}", file=sys.stderr)
+            print(f"  [{name}] DROP (feed all-filtered): {desc[:160]!r}", file=sys.stderr)
     await ctx.close()
 
 
